@@ -3,8 +3,9 @@ title: CSE Chatbot For GEHU
 emoji: 🎓
 colorFrom: blue
 colorTo: indigo
-sdk: docker
-app_port: 7860
+sdk: gradio
+app_file: app.py
+python_version: 3.11
 ---
 
 # CSE Chatbot
@@ -24,6 +25,6 @@ The embedding model downloads the first time the app starts. You can upload PDF,
 
 ## Deploy on Hugging Face Spaces
 
-Create a **Docker** Space, then push this repository to it. The included `Dockerfile` serves the app on port `7860`. The first startup downloads the `all-MiniLM-L6-v2` embedding model and may take a few minutes. Free Spaces can pause after inactivity, and files uploaded at runtime may not persist across restarts.
+This repository includes a Gradio chat interface in `app.py` for free Hugging Face Spaces. Create a **Gradio** Space and push the project files to it. The first startup downloads the `all-MiniLM-L6-v2` embedding model and may take a few minutes. Free Spaces can pause after inactivity, and files uploaded at runtime may not persist across restarts.
 
-The interactive chat UI is served at `/`, with API documentation at `/docs`.
+The Space loads the committed `knowledge_base.json`. The original FastAPI API remains available for local use with `python main.py`; the hosted Space serves the Gradio chat interface.
