@@ -4,7 +4,8 @@ An intelligent document-based chatbot designed to help students retrieve academi
 
 ## 🌐 Live Demo
 
-**Try the chatbot here:** [https://siddhantbisht2004-cse-chatbot-for-gehu.hf.space/](YOUR_LIVE_LINK)
+[**Try the Chatbot Here**](https://siddhantbisht2004-cse-chatbot-for-gehu.hf.space/)
+
 
 ## ✨ Features
 
